@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,62 @@
     <link href="../dist/output.css" rel="stylesheet">
     <script src="./script.js" defer></script>
 </head>
+
 <body>
-    
+    <main class="w-full h-screen">
+        <div class="w-full h-screen">
+            <div class="h-full">
+                <div class="bg-slate-600 h-2/5 p-8">
+                    <div class="flex justify-between">
+                        <span class="text-white text-2xl">Calculator</span>
+                        <button>❕</button>
+                    </div>
+                    <div class="h-full flex flex-col text-white text-end justify-center">
+                        <span class="text-3xl" data-value="remainder">0</span>
+                        <span class="text-2xl" data-value="result">0</span>
+                    </div>
+                </div>
+                <div class="h-3/5">
+                    <div class="grid grid-cols-4 grid-rows-5 h-full bg-slate-950 text-white">
+                        <div class="grid-style hover:bg-slate-900" data-clean>AC</div>
+                        <div class="grid-style hover:bg-slate-900" data-back>Back</div>
+                        <div class="grid-style hover:bg-slate-900" data-percentage>%</div>
+                        <div class="h-full w-full grid place-items-center hover:bg-slate-900" data-division>
+                            <div class="grid-style rounded-full bg-slate-50 text-black w-16 h-16" >➗</div>
+                        </div>
+
+                        <div class="grid-style hover:bg-slate-900" data-value="value">7</div>
+                        <div class="grid-style hover:bg-slate-900" data-value="value">8</div>
+                        <div class="grid-style hover:bg-slate-900" data-value="value">9</div>
+                        <div class="grid-style hover:bg-slate-900" data-multiplication>
+                            <div class="grid-style rounded-full  bg-slate-50 text-black w-16 h-16" >✖</div>
+                        </div>
+
+                        <div class="grid-style hover:bg-slate-900" data-value="value">4</div>
+                        <div class="grid-style hover:bg-slate-900" data-value="value">5</div>
+                        <div class="grid-style hover:bg-slate-900" data-value="value">6</div>
+                        <div class="grid-style hover:bg-slate-900" data-substract>
+                            <div class="grid-style rounded-full  bg-slate-50 text-black w-16 h-16" >➖</div>
+                        </div>
+
+                        <div class="grid-style hover:bg-slate-900" data-value="value">3</div>
+                        <div class="grid-style hover:bg-slate-900" data-value="value">2</div>
+                        <div class="grid-style hover:bg-slate-900" data-value="value">1</div>
+                        <div class="grid-style hover:bg-slate-900" data-sum>
+                            <div class="grid-style rounded-full  bg-slate-50 text-black w-16 h-16" >➕</div>
+                        </div>
+
+                        <div class="col-span-2 row-span-1  flex justify-center items-center hover:bg-slate-900 cursor-pointer" data-value="value">0</div>
+                        <div class="grid-style hover:bg-slate-900" data-value="value">.</div>
+                        <div class="grid-style hover:bg-slate-900" data-equal>
+                            <div class="grid-style rounded-full  bg-orange-500 text-white w-16 h-16" >=</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

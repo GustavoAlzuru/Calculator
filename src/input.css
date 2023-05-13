@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-style{
+    @apply col-span-1 row-span-1  flex justify-center items-center cursor-pointer text-xl
+}
