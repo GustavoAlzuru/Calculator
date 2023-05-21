@@ -53,6 +53,12 @@ multiplication.addEventListener('click', () => {
 division.addEventListener('click', () => {
     handleOperationButtonClick(signs.divide)
 })
+percentage.addEventListener('click', () => {
+    if(remainder.textContent == 0) return
+    let toNumber = parseFloat(remainder.textContent)
+    toNumber = toNumber * 0.01
+    remainder.textContent = toNumber
+})
 clean.addEventListener('click', () => {
     numsToResolve = []
     calculation = 0
@@ -61,7 +67,12 @@ clean.addEventListener('click', () => {
 })
 back.addEventListener('click', () => {
     let resultRemainder = remainder.textContent
-    let newNumber = Number(String(resultRemainder).slice(0, -1))
+    let newNumber
+    if(result.textContent.includes('-')){
+        newNumber = Number(String(resultRemainder).slice(0, -2))
+    }else{
+        newNumber = Number(String(resultRemainder).slice(0, -1))
+    }
     remainder.textContent = newNumber
 })
 
