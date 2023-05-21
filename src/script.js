@@ -113,3 +113,15 @@ equal.addEventListener('click', () => {
     }
 })
 
+/// dark mode
+
+const darkMode = document.getElementById('darkMode')
+darkMode.addEventListener('click', () => {
+    if(darkMode.innerHTML == '☀'){
+        document.documentElement.classList.add('dark')
+        darkMode.innerHTML = '🌙'
+    }else{
+        document.documentElement.classList.remove('dark')
+        darkMode.innerHTML = '☀'
+    }
+})
