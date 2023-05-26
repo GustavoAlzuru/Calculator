@@ -26,8 +26,12 @@ let calculation
 
 getAllValues.forEach(value => {
     value.addEventListener('click', () => {
-        if(remainder.textContent == 0){
-            remainder.textContent = ""
+        if(remainder.textContent == '0'){
+            if(value.textContent === '.'){
+                remainder.textContent = '0.'
+            }else{
+                remainder.textContent = ""
+            }
         }
         if(remainder.textContent.includes('.') && value.textContent === '.') return
         remainder.textContent += value.textContent
